@@ -50,6 +50,7 @@ a:link{
     width: 100%;
     color: white;
     border: none;
+    border-radius: .5rem;
     outline: none;
     background: var(--blue);
     padding: .5rem 2.2rem;
@@ -102,9 +103,13 @@ p{
 
 
 .btn2{
+    display: flex;
+    align-items: center;
+    text-align: center;
     height: 2.8rem;
-    width: 10rem;
+    width: 8rem;
     color: white;
+    border-radius: .5rem;
     border: none;
     outline: none;
     background: var(--blue);
@@ -112,9 +117,11 @@ p{
     font-size: .9rem;
     font-weight: bold;
     transition: all .5s;
+    text-decoration: none;
 }
 .btn2:hover{
     background: var(--blueH);
+    color: #F6F8FF;
 }
 
 
@@ -249,6 +256,7 @@ p{
 @media (max-width:768px){
     .main{
         background-size: auto;
+
     }
   
     .main h1{
@@ -265,6 +273,7 @@ p{
     .main p{
         width: 80%;
     }
+   
 }
 
 @media (max-width:450px){
@@ -274,5 +283,9 @@ p{
     }
     .main p{
         width: 100%;
+    }
+    .main .btn2{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
